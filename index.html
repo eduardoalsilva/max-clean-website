@@ -2,74 +2,81 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="imagex/png" href="./images/icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaxClean</title>
 </head>
 <body>
-    <main>
-        <h1>MaxClean Limpeza e Higienização</h1>
-        <section>
-            <h2>Nossos serviços</h2>
-            <h3>Limpamos e higienizamos:</h3>
-            <ul>
-                <li>Carros</li>
-                <li>Colchões</li>
-                <li>Sofás</li>
-                <li>Tapetes</li>
-            </ul>
-        <hr>
-        <p title="I'm a tooltip">Hello World!</p>
-        <img src="img/max-clean-estofados.jpeg" alt="MaxClean Limpeza e Higienização" title="MaxClean Limpeza e Higienização">
-        </section>  
-        <section>
-            <h2>Antes e depois</h2>
-            <h3>Higienizações realizadas:</h3>
-
-            <figure>
-                <img src="img/banco-de-carros-antes-e-depois-2.jpeg" alt="Banco de carro">
-                <figcaption>Bancos de carro</figcaption>
-            </figure>
-
-            <figure>
-                <img src="img/banco-de-carros-antes-e-depois.jpeg" alt="Banco de carro">
-                <figcaption>Bancos de carro</figcaption>
-            </figure>
+    <div class="content">
+        <main>
+            <h1>MaxClean Limpeza e Higienização</h1>
+            <section id="servicos">
+                <h2>Nossos serviços</h2>
+                <h3>Limpamos e higienizamos:</h3>
+                <ul>
+                    <li>Carros</li>
+                    <li>Colchões</li>
+                    <li>Sofás</li>
+                    <li>Tapetes</li>
+                </ul>
             <hr>
+            <p title="I'm a tooltip">Hello World!</p>
+            <img src="img/max-clean-estofados.jpeg" alt="MaxClean Limpeza e Higienização" title="MaxClean Limpeza e Higienização">
+            </section>  
+            <section>
+                <h2>Antes e depois</h2>
+                <h3>Higienizações realizadas:</h3>
+                <article class="item">
+                    <figure class="item">
+                        <img src="img/banco-de-carros-antes-e-depois-2.jpeg" alt="Banco de carro">
+                        <figcaption class="servico">Bancos de carro</figcaption>
+                    </figure>
+                    <p> R$ 150,00</p>
+                </article>
+                <article class="item">
+                    <figure>
+                        <img src="img/banco-de-carros-antes-e-depois.jpeg" alt="Banco de carro">
+                        <figcaption>Bancos de carro</figcaption>
+                    </figure>
+                    <p class="preco">R$ 150,00</p>
+                </article>
+                    <hr>
+                    
+                <figure>
+                    <h2>Serviços</h2>
+                    <img src='img/servicos-antes-e-depois.jpeg'>
+                    <hr>
+                    <figcaption>Solicitar serviço</figcaption>
+                    <form action="#">
+                        <input type="text" class="text" name="Name" placeholder="João da Silva" required>
+                        <fieldset>
+                            <legend>Qual objeto precisa realizar a limpeza?</legend>
+                            <label><input id='cholchao' type="radio" name="objeto" value="cholchao"> Colchão</label>
+                            <label><input id='sofa' type='radio' name="objeto" value="sofa"> Sofá</label>
+                            <label><input id='tapete' type='radio' name="objeto" value="tapete"> Tapete</label>
+                            <label><input id='carro' type='radio' name="objeto" value="carro"> Carro</label>
+                        </fieldset>
+                        <fieldset>
+                            <label><input id='celular' type="text" placeholder="(11)11111-1111" name="celular"><input id='whatsapp' type="checkbox" checked> Whatsapp</label>
+                        </fieldset>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </figure>
 
-            <figure>
-                <h2>Serviços</h2>
-                <img src='img/servicos-antes-e-depois.jpeg'>
                 <hr>
-                <figcaption>Solicitar serviço</figcaption>
-                <form action="#">
-                    <input type="text" class="text" name="Name" placeholder="João da Silva" required>
-                    <fieldset>
-                        <legend>Qual objeto precisa realizar a limpeza?</legend>
-                        <label><input id='cholchao' type="radio" name="objeto" value="cholchao"> Colchão</label>
-                        <label><input id='sofa' type='radio' name="objeto" value="sofa"> Sofá</label>
-                        <label><input id='tapete' type='radio' name="objeto" value="tapete"> Tapete</label>
-                        <label><input id='carro' type='radio' name="objeto" value="carro"> Carro</label>
-                    </fieldset>
-                    <fieldset>
-                        <label><input id='celular' type="text" placeholder="(11)11111-1111" name="celular"><input id='whatsapp' type="checkbox" checked> Whatsapp</label>
-                    </fieldset>
-                    <button type="submit">Enviar</button>
-                </form>
-            </figure>
-
-            <hr>
-            <pre>
-                My Bonnie lies over the ocean.
-                
-                My Bonnie lies over the sea.
-                
-                My Bonnie lies over the ocean.
-                
-                Oh, bring back my Bonnie to me.
-            </pre>
-        </section>
-    </main>
+                <pre>
+                    My Bonnie lies over the ocean.
+                    
+                    My Bonnie lies over the sea.
+                    
+                    My Bonnie lies over the ocean.
+                    
+                    Oh, bring back my Bonnie to me.
+                </pre>
+            </section>
+        </main>
+    </div>
     <footer>
         Desde 2023
     </footer>
