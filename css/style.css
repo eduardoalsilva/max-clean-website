@@ -1,9 +1,11 @@
 .content {
-    background-color: cornflowerblue;
+    background-color: #0047AB;
+    color: #B2EBF2;
     font-family: sans-serif;
     margin-left: auto;
     margin-right: auto;
     max-width: 1500px;
+    text-align: center;
     width: 80%;
 }
 
@@ -11,8 +13,36 @@ h1, h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
 h1, h2, p, h3 {
     text-align: center;
+}
+
+.servicos {
+    text-align: center;     
+}
+
+.servicos-lista {
+    text-align: center;
+    width: 20%;
+}
+
+.servicos-lista-item {
+    text-align: left;
+}
+
+hr {
+    background-color: #E6E6FA;
+    border-color: #E6E6FA;
+    height: 2px;
+    
 }
 
 .servico {
@@ -20,7 +50,7 @@ h1, h2, p, h3 {
     text-align: center;
 }
 
-.item p, figure figcaption {
+.antes-e-depois-item p, figure figcaption {
     display: block;
 }
 
@@ -37,3 +67,16 @@ h1, h2, p, h3 {
 .antes-e-depois {
     padding: 20px;
 }
+
+.established {
+    font-style: italic;
+}
+
+/* Azul Celeste: #B2EBF2
+Azul Marinho: #1976D2
+Azul Cobalto: #0047AB
+Azul Turquesa: #00BCD4
+Azul Safira: #0F52BA
+Verde-água: #7FFFD4
+Roxo Lavanda: #E6E6FA
+Cinza-azulado: #B0C4DE */
