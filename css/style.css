@@ -5,6 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1500px;
+    padding: 20px;
     text-align: center;
     width: 80%;
 }
@@ -30,6 +31,7 @@ h1, h2, p, h3 {
 }
 
 .servicos-lista {
+    font-size: 18px;
     text-align: center;
     width: 20%;
 }
@@ -70,6 +72,10 @@ hr {
 
 .established {
     font-style: italic;
+}
+
+footer {
+    font-size: 14px;
 }
 
 /* Azul Celeste: #B2EBF2
