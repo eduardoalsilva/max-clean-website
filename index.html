@@ -8,7 +8,7 @@
     <title>MaxClean</title>
 </head>
 <body>
-    <div class="content">
+    <div class="container">
         <main>
             <h1>MaxClean Limpeza e Higienização</h1>
             <section id="servicos">
@@ -30,20 +30,20 @@
                     <li class="servicos-lista-item">Partes plásticas</li>
                 </ul>
             <hr>
-            <img src="img/max-clean-estofados.jpeg" alt="MaxClean Limpeza e Higienização" title="MaxClean Limpeza e Higienização">
+            <img src="img/max-clean-estofados.jpeg" alt="MaxClean Limpeza e Higienização" title="MaxClean Limpeza e Higienização" class="maxclean">
             </section>  
             <section id="antes-e-depois" class="antes-e-depois">
                 <h2>Transformando sujeira em conforto:</h2> <br> 
                     <h3>Veja o antes e depois da nossa magia de limpeza!</h3>
                 <article class="antes-e-depois-item">
-                    <figure class="servico">
+                    <figure>
                         <img src="img/banco-de-carros-antes-e-depois-2.jpeg" alt="Banco de carro">
                         <figcaption>Bancos de carro</figcaption>
                     </figure>
                     <p class="preco"> R$ 150,00</p>
                 </article>
                 <article class="antes-e-depois-item">
-                    <figure class="servico">
+                    <figure>
                         <img src="img/banco-de-carros-antes-e-depois.jpeg" alt="Banco de carro">
                         <figcaption>Bancos de carro</figcaption>
                     </figure>
@@ -69,18 +69,36 @@
                 <figure>
                     <figcaption>Solicitar serviço</figcaption>
                     <form action="#">
-                        <input type="text" class="text" name="Name" placeholder="João da Silva" required>
-                        <fieldset>
+                        <label for="first-name-last-name">Nome e sobrenome: 
+                            <input type="text" class="text" id='first-name-last-name' name="Name" placeholder="João da Silva" required>
+                        </label>
+                            <fieldset>
+
                             <legend>Qual objeto precisa realizar a limpeza?</legend>
-                            <label><input id='cholchao' type="radio" name="objeto" value="cholchao"> Colchão</label>
-                            <label><input id='sofa' type='radio' name="objeto" value="sofa"> Sofá</label>
-                            <label><input id='tapete' type='radio' name="objeto" value="tapete"> Tapete</label>
-                            <label><input id='carro' type='radio' name="objeto" value="carro"> Carro</label>
+                            <label for="colcao"><input id='cholchao' type="radio" name="objeto" value="cholchao"> Colchão</label>
+                            <label for="sofa"><input id='sofa' type='radio' name="objeto" value="sofa"> Sofá</label>
+                            <label for="tapete"><input id='tapete' type='radio' name="objeto" value="tapete"> Tapete</label>
+                            <label for="carro"><input id='carro' type='radio' name="objeto" value="carro"> Carro</label>
                         </fieldset>
                         <fieldset>
-                            <label><input id='celular' type="text" placeholder="(11)11111-1111" name="celular"><input id='whatsapp' type="checkbox" checked> Whatsapp</label>
+                            <label for="celular"><input id='celular' type="text" placeholder="(11)11111-1111" name="celular"><input id='whatsapp' type="checkbox" checked> Whatsapp</label>
                         </fieldset>
-                        <button type="submit">Enviar</button>
+                        <fieldset>
+
+                            <label for="foto">Anexe uma imagem do objeto a ser realizado o serviço: <input id="picture" type="file"></label>
+                            <label for="detalhes">Escreva os detalhes da limpeza a ser feita e sobre o objeto que achar necessário: <textarea name="" id="detalhes" cols="120" rows="10"></textarea></label>
+                            <label for="referencia"> Onde você ouviu falar da MaxClean?
+                                <select name="referencia" id="referencia">
+                                    <option value="">(selecione um)</option>
+                                    <option value="1"> Redes sociais</option>
+                                    <option value="2"> Amigos</option>
+                                    <option value="3"> Google</option>
+                                    <option value="4"> Outros</option>
+                                </select>
+
+                            </label>
+                        </fieldset>
+                        <input type="submit" value="Enviar">
                     </form>
                 </figure>
             </section>
