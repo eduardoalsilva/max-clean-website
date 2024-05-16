@@ -1,5 +1,9 @@
-.content {
-    background-color: #0047AB;
+body {
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(#0047AB, #00BCD4, #0047AB, #00BCD4);
     color: #B2EBF2;
     font-family: sans-serif;
     margin-left: auto;
@@ -31,9 +35,9 @@ h1, h2, p, h3 {
 }
 
 .servicos-lista {
+    align-items: center;
+    display: inline-block;
     font-size: 18px;
-    text-align: center;
-    width: 20%;
 }
 
 .servicos-lista-item {
@@ -47,18 +51,8 @@ hr {
     
 }
 
-.servico {
-    display: inline-block;
-    text-align: center;
-}
-
 .antes-e-depois-item p, figure figcaption {
     display: block;
-}
-
-.sevico {
-    text-align: left;
-    width: 50%;
 }
 
 .preco {
@@ -70,6 +64,20 @@ hr {
     padding: 20px;
 }
 
+fieldset, label {
+    padding: 1rem 0 0 0;
+    /* margin: 2px; */
+    display: block;
+}
+
+input[type="submit"] {
+    background-color: #00BCD4;
+    border-color: #E6E6FA;
+    color: #E6E6FA;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
 .established {
     font-style: italic;
 }
