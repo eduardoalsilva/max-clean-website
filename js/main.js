@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () =>
 {
     // Configurar número do WhatsApp (substitua pelo número real com código do país sem "+"; ex: "5511912345678")
-    const WHATSAPP_NUMBER = '5511995758183'; 
+    const WHATSAPP_NUMBER = '5511995758183';
 
     const whatsappBtn = document.getElementById('whatsapp-btn');
     const footerWhatsapp = document.getElementById('footer-whatsapp');
@@ -51,7 +51,8 @@ document.addEventListener('DOMContentLoaded', () =>
         if (isMobile())
         {
             window.location.href = url;
-        } else {
+        } else
+        {
             window.open(url, '_blank');
         }
     }
