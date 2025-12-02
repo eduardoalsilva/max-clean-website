@@ -1,114 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="imagex/png" href="./images/icon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaxClean</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description"
+        content="MaxClean — Limpeza e higienização profissional de sofás, colchões, tapetes e veículos. Transformamos sujeira em conforto." />
+    <meta name="theme-color" content="#0066cc" />
+    <meta property="og:title" content="MaxClean — Limpeza e Higienização Profissional" />
+    <meta property="og:description" content="Serviços de limpeza profissional para sofás, colchões e veículos." />
+    <meta property="og:type" content="business.business" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>MaxClean — Limpeza e Higienização</title>
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="canonical" href="https://seu-dominio.com.br" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <div class="container">
-        <main>
-            <h1>MaxClean Limpeza e Higienização</h1>
-            <section id="servicos">
-                <h2>Nossos serviços</h2>
-                <h3>Limpeza e Higienização:</h3>
-                <ul class="servicos-lista">
-                    <li class="servicos-lista-item">Sofás</li>
-                    <li class="servicos-lista-item">Colchões</li>
-                    <li class="servicos-lista-item">Cadeiras</li>
-                    <li class="servicos-lista-item">Poltronas</li>
-                    <li class="servicos-lista-item">E mais...</li>
-                </ul>
-                <h3>Limpeza e Higienização de Veículos:</h3>
-                <ul class="servicos-lista">
-                    <li class="servicos-lista-item">Bancos</li>
-                    <li class="servicos-lista-item">Tetos</li>
-                    <li class="servicos-lista-item">Carpetes</li>
-                    <li class="servicos-lista-item">Paineis</li>
-                    <li class="servicos-lista-item">Partes plásticas</li>
-                </ul>
-            <hr>
-            <img src="img/max-clean-estofados.jpeg" alt="MaxClean Limpeza e Higienização" title="MaxClean Limpeza e Higienização" class="maxclean">
-            </section>  
-            <section id="antes-e-depois" class="antes-e-depois">
-                <h2>Transformando sujeira em conforto:</h2> <br> 
-                    <h3>Veja o antes e depois da nossa magia de limpeza!</h3>
-                <article class="antes-e-depois-item">
-                    <figure>
-                        <img src="img/banco-de-carros-antes-e-depois-2.jpeg" alt="Banco de carro">
-                        <figcaption>Bancos de carro</figcaption>
-                    </figure>
-                    <p class="preco"> R$ 150,00</p>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home" aria-label="MaxClean — Voltar ao início">
+                <img src="img/logo.png" alt="Logo MaxClean" class="logo">
+                <span class="brand-name">MaxClean</span>
+            </a>
+            <nav class="main-nav" aria-label="Menu principal">
+                <a href="#servicos">Serviços</a>
+                <a href="#antes-e-depois">Antes & Depois</a>
+                <a href="#jornada">Jornada</a>
+                <a href="#solicitar-servico" class="btn btn-primary">Solicitar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>MaxClean — Limpeza e Higienização Profissional</h1>
+                    <p>Transformamos sujeira em conforto. Sofás, colchões, bancos de carro e muito mais.</p>
+                    <p class="hero-cta">
+                        <a class="btn btn-primary" href="#solicitar-servico">Pedir Orçamento</a>
+                        <button id="whatsapp-btn" class="btn btn-outline"
+                            aria-label="Abrir WhatsApp para conversar com MaxClean">Abrir WhatsApp</button>
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <img src="img/max-clean-estofados.jpeg"
+                        alt="Profissional limpando sofá com equipamento profissional" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="container section">
+            <h2>Nossos serviços</h2>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Limpeza e Higienização</h3>
+                    <ul>
+                        <li>Sofás</li>
+                        <li>Colchões</li>
+                        <li>Cadeiras e Poltronas</li>
+                        <li>Tapetes</li>
+                    </ul>
                 </article>
-                <article class="antes-e-depois-item">
-                    <figure>
-                        <img src="img/banco-de-carros-antes-e-depois.jpeg" alt="Banco de carro">
-                        <figcaption>Bancos de carro</figcaption>
-                    </figure>
-                    <p class="preco">R$ 150,00</p>
+                <article class="card">
+                    <h3>Veículos</h3>
+                    <ul>
+                        <li>Bancos</li>
+                        <li>Tetos e Carpetes</li>
+                        <li>Painéis e Plásticos</li>
+                    </ul>
                 </article>
-            </section>
-            <hr>
-            <section id="jornada">
-                <h2>Jornada do Cliente: 
-                    <h3>Da consulta à satisfação garantida</h3></h2>
-                    <ol class="servicos-lista">
-                        <li class="servicos-lista-item">O cliente entra em contato através do whatsapp</li>
-                        <li class="servicos-lista-item">O cliente envia as fotos da limpeza a ser realizada</li>
-                        <li class="servicos-lista-item">Fazemos o orçamento e explicamos o serviço</li>
-                        <li class="servicos-lista-item">Agendamos para a realização do serviço</li>
-                        <li class="servicos-lista-item">Realizamos o serviço na casa do cliente ou na MaxClean</li>
-                        <li class="servicos-lista-item">Entregamos o serviço</li>
-                        <li class="servicos-lista-item">Fazemos o contato com o cliente após 3 dias para recebermos o feedback sobre o serviço ou possíveis reclamações</li>
-                    </ol>
-                    <hr>
-            </section>
-            <section id="solicitar-servico">
-                <figure>
-                    <figcaption>Solicitar serviço</figcaption>
-                    <form action="#">
-                        <label for="first-name-last-name">Nome e sobrenome: 
-                            <input type="text" class="text" id='first-name-last-name' name="Name" placeholder="João da Silva" required>
-                        </label>
-                            <fieldset>
+                <article class="card">
+                    <h3>Serviços Extras</h3>
+                    <ul>
+                        <li>Remoção de odores</li>
+                        <li>Limpeza profunda</li>
+                        <li>Atendimento em domicílio</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-                            <legend>Qual objeto precisa realizar a limpeza?</legend>
-                            <label for="colcao"><input id='cholchao' type="radio" name="objeto" value="cholchao"> Colchão</label>
-                            <label for="sofa"><input id='sofa' type='radio' name="objeto" value="sofa"> Sofá</label>
-                            <label for="tapete"><input id='tapete' type='radio' name="objeto" value="tapete"> Tapete</label>
-                            <label for="carro"><input id='carro' type='radio' name="objeto" value="carro"> Carro</label>
-                        </fieldset>
-                        <fieldset>
-                            <label for="celular"><input id='celular' type="text" placeholder="(11)11111-1111" name="celular"><input id='whatsapp' type="checkbox" checked> Whatsapp</label>
-                        </fieldset>
-                        <fieldset>
-
-                            <label for="foto">Anexe uma imagem do objeto a ser realizado o serviço: <input id="picture" type="file"></label>
-                            <label for="detalhes">Escreva os detalhes da limpeza a ser feita e sobre o objeto que achar necessário: <textarea name="" id="detalhes" cols="120" rows="10"></textarea></label>
-                            <label for="referencia"> Onde você ouviu falar da MaxClean?
-                                <select name="referencia" id="referencia">
-                                    <option value="">(selecione um)</option>
-                                    <option value="1"> Redes sociais</option>
-                                    <option value="2"> Amigos</option>
-                                    <option value="3"> Google</option>
-                                    <option value="4"> Outros</option>
-                                </select>
-
-                            </label>
-                        </fieldset>
-                        <input type="submit" value="Enviar">
-                    </form>
+        <section id="antes-e-depois" class="container section">
+            <h2>Antes & Depois</h2>
+            <p class="muted">Clique nas imagens para ampliar</p>
+            <div class="gallery-grid" id="gallery">
+                <figure class="gallery-item" tabindex="0" role="button">
+                    <img src="img/banco-de-carros-antes-e-depois.jpeg"
+                        alt="Banco de carro antes e depois da limpeza profissional"
+                        data-caption="Bancos de carro — R$150" loading="lazy">
+                    <figcaption>Bancos de carro — R$150</figcaption>
                 </figure>
-            </section>
+                <figure class="gallery-item" tabindex="0" role="button">
+                    <img src="img/banco-de-carros-antes-e-depois-2.jpeg"
+                        alt="Segundo exemplo de banco de carro antes e depois" data-caption="Bancos de carro — R$150"
+                        loading="lazy">
+                    <figcaption>Bancos de carro — R$150</figcaption>
+                </figure>
+                <!-- ...existing code... -->
+            </div>
+        </section>
 
-        </main>
-    </div>
-    <hr>
-    <footer>
-        <p class="established">Desde 2023</p>
+        <section id="jornada" class="container section">
+            <h2>Passo a passo do seu atendimento</h2>
+            <h3>Da consulta à satisfação garantida</h3>
+            <ol class="timeline">
+                <li>Contato via WhatsApp</li>
+                <li>Envio de fotos do objeto a limpar</li>
+                <li>Orçamento e explicação do serviço</li>
+                <li>Agendamento</li>
+                <li>Execução (domicílio ou na MaxClean)</li>
+                <li>Entrega</li>
+                <li>Contato pós-serviço em 3 dias para feedback</li>
+            </ol>
+        </section>
 
+        <section id="solicitar-servico" class="container section">
+            <h2>Solicitar serviço</h2>
+            <form id="service-form" class="form" novalidate>
+                <div class="form-row">
+                    <label for="name">Nome completo <span aria-label="campo obrigatório">*</span>
+                        <input id="name" name="name" type="text" placeholder="João da Silva" required
+                            aria-required="true">
+                    </label>
+                    <label for="phone">Telefone <span aria-label="campo obrigatório">*</span>
+                        <input id="phone" name="phone" type="tel" placeholder="(11) 91111-1111"
+                            pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" required aria-required="true">
+                    </label>
+                </div>
+
+                <fieldset class="form-fieldset">
+                    <legend>O que precisa limpar? <span aria-label="campo obrigatório">*</span></legend>
+                    <label><input type="radio" name="object" value="colchao" required> Colchão</label>
+                    <label><input type="radio" name="object" value="sofa"> Sofá</label>
+                    <label><input type="radio" name="object" value="tapete"> Tapete</label>
+                    <label><input type="radio" name="object" value="carro"> Carro</label>
+                </fieldset>
+
+                <!-- <label for="picture">Anexar foto (opcional)
+                    <input id="picture" name="picture" type="file" accept="image/*" aria-describedby="picture-help">
+                </label>
+                <small id="picture-help" class="muted">Máximo 5MB, formatos: JPG, PNG</small>
+                <div id="preview" aria-live="polite" aria-atomic="true" class="preview"></div> -->
+
+                <label for="details">Detalhes (opcional)
+                    <textarea id="details" name="details" rows="5"
+                        placeholder="Descreva manchas, tamanho, etc."></textarea>
+                </label>
+
+                <label for="ref">Onde ouviu falar da MaxClean?
+                    <select id="ref" name="ref">
+                        <option value="">(selecione)</option>
+                        <option value="redes">Redes sociais</option>
+                        <option value="amigos">Amigos</option>
+                        <option value="google">Google</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </label>
+
+                <div class="form-actions">
+                    <button type="button" id="send-whatsapp" class="btn btn-outline"
+                        aria-label="Enviar solicitação via WhatsApp">Enviar via WhatsApp</button>
+                </div>
+
+                <p id="form-message" role="status" class="form-message" aria-live="polite" aria-atomic="true"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Desde 2023 • MaxClean — Limpeza e Higienização</p>
+            <p class="small">Telefone: <button id="footer-whatsapp" class="link-button"
+                    aria-label="Abrir WhatsApp">WhatsApp</button></p>
+        </div>
     </footer>
+
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog"
+        aria-label="Visualizador de imagens — Galeria de projetos">
+        <button id="lightbox-close" class="lightbox-close" aria-label="Fechar visualizador">×</button>
+        <img id="lightbox-img" alt="Imagem ampliada da galeria">
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
